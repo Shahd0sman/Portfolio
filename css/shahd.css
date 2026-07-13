@@ -54,4 +54,18 @@ padding: 0 50px;
     font-size: 18px;
     color: #fff;
 }
+.profile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.front{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#718355;
+    border-radius:0 100px 0 100px;
+    box-shadow:10px 10px 30px rgb(0, 0, 0,25%);
+
+}
 
