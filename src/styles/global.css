@@ -1,0 +1,73 @@
+:root {
+  --bg: #f4f3ff;
+  --card: rgba(255, 255, 255, .75);
+  --ink: #2b2a74;
+  --muted: #6a69a0;
+  --primary: #5b5fc7;
+  --soft: #e2e2ff;
+  --border: #cfd0f5;
+  --mint: #d3f3df;
+  --shadow: 0 8px 24px rgba(91, 95, 199, .12);
+}
+
+:root[data-theme="dark"] {
+  --bg: #15142b;
+  --card: rgba(38, 36, 78, .75);
+  --ink: #ebebff;
+  --muted: #a7a6d8;
+  --primary: #8f93ff;
+  --soft: #2e2c62;
+  --border: #3d3b7c;
+  --mint: #25503d;
+  --shadow: 0 8px 24px rgba(0, 0, 0, .35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Patrick Hand", system-ui, sans-serif;
+  font-size: 1.15rem;
+  color: var(--ink);
+  background: radial-gradient(circle at 15% 10%, var(--soft), transparent 40%),
+    radial-gradient(circle at 90% 60%, var(--soft), transparent 35%), var(--bg);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+.handwritten,
+.btn,
+.nav-links a {
+  font-family: "Gaegu", cursive;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
