@@ -36,7 +36,7 @@ export const cover = {
 export const about = {
   image:aboutphoto,                // TODO
   paragraphs: [                              // TODO: 1–3 short paragraphs
-  "I turn “What if?” into “Here it is",
+  "I turn “What if?” into “Here it is  ",
   "I'm a UI/UX Designer and FullStack Developer who believes technology should do more than just work it should make life easier",
 "I enjoy exploring ideas, understanding people's needs, and turning complex problems into simple, intuitive digital experiences. By combining thoughtful design with functional development, I bring ideas to life as products that look good, feel right, and serve a real purpose",
 "For me, great digital products aren't just about how they look or how they're built. They're about how they make people feel, what they help them achieve, and the difference they make",

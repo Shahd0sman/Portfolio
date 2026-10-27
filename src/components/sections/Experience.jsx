@@ -8,6 +8,11 @@ export default function Experience() {
       <div className="timeline">
         {experience.map((x, i) => (
           <article key={i} className="panel tl-item">
+            {i === 0 && (
+              <div className="section-sticker experience-sticker" dir="rtl">
+                بعد 14 سنة خدمة ف ثانوي بتقولي اقف!!!
+              </div>
+            )}
             <span className="period">{x.period}</span>
             <h3>{x.role}</h3>
             <h4>{x.company}</h4>

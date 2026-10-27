@@ -75,6 +75,44 @@
   align-items: center;
 }
 
+.section-sticker {
+  position: absolute;
+  z-index: 2;
+  width: fit-content;
+  max-width: 220px;
+  padding: 8px 14px;
+  background: var(--cover-accent);
+  border: 2px solid var(--cover-accent-border);
+  box-shadow: var(--shadow);
+  color: var(--cover-accent-ink);
+  font: 1.15rem "Gaegu";
+  text-align: center;
+  transform: rotate(3deg);
+}
+
+.about-grid {
+  position: relative;
+  padding: 50px 28px 58px;
+}
+
+.about-sticker-top {
+  top: -14px;
+  right: 20px;
+  transform: rotate(-4deg);
+}
+
+.about-sticker-bottom {
+  bottom: -14px;
+  left: 20px;
+  transform: rotate(3deg);
+}
+
+.experience-sticker {
+  top: -14px;
+  right: 20px;
+  transform: rotate(-3deg);
+}
+
 .scribble {
   border-bottom: 4px solid var(--soft);
   border-radius: 4px;
@@ -305,6 +343,10 @@
 
 .tl-item {
   position: relative;
+}
+
+.tl-item:first-child {
+  padding-top: 52px;
 }
 
 .tl-item::before {
@@ -565,4 +607,5 @@
   .enfp-note {
     display: block;
   }
+
 }

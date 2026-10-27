@@ -6,6 +6,7 @@ export default function About() {
     <section id="about" className="section">
       <SectionTitle>About Me</SectionTitle>
       <div className="panel about-grid">
+        <div className="section-sticker about-sticker-top" dir="rtl">مين ده؟</div>
         <img className="about-img" src={about.image} alt="About me" />
         <div>
           {about.paragraphs.map((p, i) => (
@@ -17,6 +18,9 @@ export default function About() {
             ))}
           </div>
           <a className="btn primary" href={profile.resumeUrl} download>Download CV</a>
+        </div>
+        <div className="section-sticker about-sticker-bottom" dir="rtl">
+          ده كلاوي جينيص الشقة
         </div>
       </div>
     </section>
