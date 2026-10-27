@@ -127,10 +127,10 @@ export const services = [
 // ---------- 8. FEEDBACKS ----------
 export const feedbacks = [
   {
-    name: "Client Name",                     // TODO
-    role: "Role, Company",                   // TODO
-    avatar: "/images/feedback/client1.png",  // TODO (optional — falls back to initial)
-    text: "Paste what this person said about working with you.", // TODO
+    name: "",                     // TODO
+    role: "",                   // TODO
+    avatar: "",  // TODO (optional — falls back to initial)
+    text: "", // TODO
   },
   // TODO: copy to add more
 ];
