@@ -8,10 +8,12 @@ import Skills from "./components/sections/Skills.jsx";
 import Projects from "./components/sections/Projects.jsx";
 import Services from "./components/sections/Services.jsx";
 import Feedbacks from "./components/sections/Feedbacks.jsx";
+import StarTrail from "./components/StarTrail.jsx";
 
 export default function App() {
   return (
     <>
+      <StarTrail />
       <Navbar />
       <main>
         <Cover />

@@ -189,6 +189,18 @@
   position: relative;
 }
 
+.enfp-note {
+  left: 2%;
+  top: auto;
+  bottom: 12%;
+  z-index: 2;
+  width: 92px;
+  padding: 10px 8px;
+  color: var(--primary);
+  font-weight: 700;
+  transform: rotate(6deg);
+}
+
 .cover-art>img {
   margin: 0 auto;
   max-height: 420px;
@@ -202,9 +214,10 @@
   right: 0;
   z-index: 2;
   padding: 8px 18px;
-  background: var(--mint);
-  border: 2px solid var(--border);
+  background: var(--cover-accent);
+  border: 2px solid var(--cover-accent-border);
   border-radius: 18px;
+  color: var(--cover-accent-ink);
   font: 1.15rem "Gaegu";
   transform: rotate(-5deg);
 }
@@ -217,9 +230,32 @@
   animation: bob 5s ease-in-out infinite;
 }
 
-.snow {
+.stars {
   left: 4%;
   top: 12%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.stars span {
+  position: absolute;
+}
+
+.stars span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.stars span:nth-child(2) {
+  top: 1.8rem;
+  left: 2rem;
+  font-size: 1.5rem;
+}
+
+.stars span:nth-child(3) {
+  top: 2.4rem;
+  left: -.7rem;
+  font-size: 1rem;
 }
 
 .flower {
@@ -411,8 +447,10 @@
 }
 
 .service-icon {
-  font-size: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
   color: var(--primary);
+  filter: drop-shadow(0 0 5px var(--service-neon-glow));
 }
 
 .service h3 {
@@ -522,5 +560,9 @@
 
   .sticky-note {
     display: none;
+  }
+
+  .enfp-note {
+    display: block;
   }
 }

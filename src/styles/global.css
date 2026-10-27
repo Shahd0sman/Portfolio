@@ -7,6 +7,10 @@
   --soft: #e2e2ff;
   --border: #cfd0f5;
   --mint: #d3f3df;
+  --cover-accent: #f4d9d3;
+  --cover-accent-ink: #654b68;
+  --cover-accent-border: #d9aaa5;
+  --service-neon-glow: rgba(91, 95, 199, .5);
   --shadow: 0 8px 24px rgba(91, 95, 199, .12);
 }
 
@@ -19,6 +23,10 @@
   --soft: #2e2c62;
   --border: #3d3b7c;
   --mint: #25503d;
+  --cover-accent: #563d55;
+  --cover-accent-ink: #fff0ed;
+  --cover-accent-border: #936c83;
+  --service-neon-glow: rgba(143, 147, 255, .65);
   --shadow: 0 8px 24px rgba(0, 0, 0, .35);
 }
 
@@ -60,12 +68,66 @@ a {
   text-decoration: none;
 }
 
+.star-trail {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cursor-star {
+  position: absolute;
+  color: var(--primary);
+  line-height: 1;
+  text-shadow: 0 0 8px var(--service-neon-glow);
+  will-change: transform, opacity;
+}
+
+.cursor-star.trail {
+  font-size: 13px;
+  animation: star-trail 650ms ease-out forwards;
+}
+
+.cursor-star.burst {
+  font-size: 16px;
+  animation: star-burst 800ms cubic-bezier(.16, .7, .3, 1) forwards;
+}
+
+@keyframes star-trail {
+  from {
+    opacity: .9;
+    transform: translate(-50%, -50%) scale(.6) rotate(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--star-x)), calc(-50% + var(--star-y))) scale(1.2) rotate(100deg);
+  }
+}
+
+@keyframes star-burst {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.4) rotate(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--star-x)), calc(-50% + var(--star-y))) scale(1) rotate(150deg);
+  }
+}
+
 :focus-visible {
   outline: 3px solid var(--primary);
   outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .star-trail {
+    display: none;
+  }
+
   * {
     animation: none !important;
     scroll-behavior: auto !important;

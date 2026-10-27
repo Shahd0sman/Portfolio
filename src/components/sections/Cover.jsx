@@ -17,7 +17,12 @@ export default function Cover() {
       </div>
       <div className="cover-art">
         <span className="bubble">✦ {cover.note}</span>
-        <span className="float snow">❄</span>
+        <div className="sticky-note enfp-note">ENFP</div>
+        <span className="float stars" aria-hidden="true">
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+        </span>
         <span className="float flower">✿</span>
         <img src={cover.image} alt={cover.name} />
       </div>
