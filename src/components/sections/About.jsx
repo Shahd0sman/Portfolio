@@ -17,7 +17,7 @@ export default function About() {
               <span key={f.label} className="chip big"><b>{f.label}:</b> {f.value}</span>
             ))}
           </div>
-          <a className="btn primary" href={profile.resumeUrl} download>Download CV</a>
+          <a className="btn primary" download>Download CV</a>
         </div>
         <div className="section-sticker about-sticker-bottom" dir="rtl">
           ده كلاوي جينيص الشقة

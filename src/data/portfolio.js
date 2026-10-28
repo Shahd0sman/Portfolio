@@ -18,7 +18,7 @@ logo,                                        // small logo from src/img
     { label: "GitHub", url: "https://github.com/Shahd0sman" },
     { label: "LinkedIn", url: "https://in/shahd-osman-2b2a79371" },
   ],
-  resumeUrl: "/resume.pdf",                  // TODO: put your CV in /public
+  resumeUrl: "",                  // TODO: put your CV in /public
 };
 
 // ---------- 1. COVER ----------
@@ -62,13 +62,33 @@ export const education = [
 // ---------- 4. EXPERIENCE ----------
 export const experience = [
   {
-    role: "",                       // TODO
-    company: "",                 // TODO
-    period: "",            // TODO
-    points: [                                // TODO: what you did
-    ],
+    role: "UI/UX Design Intern",
+    company: "ITI Ismailia",
+    period: "June 2026",
+    points: ["Completed UI/UX training at ITI Ismailia."],
+    image: "",
   },
-  // TODO: copy the block above to add more
+  {
+    role: "Front-End Development Intern",
+    company: "ITI Port Said",
+    period: "July 2026",
+    points: ["Completed front-end training using React."],
+    image: "",
+  },
+  {
+    role: "Trainee",
+    company: "Creativa",
+    period: "September – October 2026",
+    points: ["Completed training at Creativa."],
+    image: "",
+  },
+  {
+    role: "Front-End Development Course",
+    company: "Eng. Amin Amgad",
+    period: "October – January",
+    points: ["Completed a front-end development course using React."],
+    image: "",
+  },
 ];
 
 // ---------- 5. SKILLS ----------

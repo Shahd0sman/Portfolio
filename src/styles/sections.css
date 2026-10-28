@@ -343,6 +343,10 @@
 
 .tl-item {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 220px);
+  gap: 24px;
+  align-items: center;
 }
 
 .tl-item:first-child {
@@ -375,6 +379,30 @@
 
 .tl-item ul {
   padding-left: 20px;
+}
+
+.experience-photo,
+.experience-photo-placeholder,
+.experience-photo img {
+  width: 100%;
+  min-height: 160px;
+  border-radius: 18px;
+}
+
+.experience-photo img {
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.experience-photo-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  border: 2px dashed var(--border);
+  color: var(--muted);
+  background: var(--soft);
+  text-align: center;
 }
 
 .skills-grid {
@@ -608,4 +636,13 @@
     display: block;
   }
 
+  .tl-item {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-photo,
+  .experience-photo-placeholder,
+  .experience-photo img {
+    min-height: 180px;
+  }
 }

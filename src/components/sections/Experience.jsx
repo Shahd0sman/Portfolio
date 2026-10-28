@@ -13,10 +13,19 @@ export default function Experience() {
                 بعد 14 سنة خدمة ف ثانوي بتقولي اقف!!!
               </div>
             )}
-            <span className="period">{x.period}</span>
-            <h3>{x.role}</h3>
-            <h4>{x.company}</h4>
-            <ul>{x.points.map((p, j) => <li key={j}>{p}</li>)}</ul>
+            <div className="experience-details">
+              <span className="period">{x.period}</span>
+              <h3>{x.role}</h3>
+              <h4>{x.company}</h4>
+              <ul>{x.points.map((p, j) => <li key={j}>{p}</li>)}</ul>
+            </div>
+            <div className="experience-photo">
+              {x.image ? (
+                <img src={x.image} alt={`${x.company} training`} />
+              ) : (
+                <div className="experience-photo-placeholder">Add photo here</div>
+              )}
+            </div>
           </article>
         ))}
       </div>
